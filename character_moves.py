@@ -112,6 +112,6 @@ while(True):
     # 삼각 이동
     move_tri()
 
-    break
+
 
 close_canvas()
