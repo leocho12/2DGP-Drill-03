@@ -65,12 +65,45 @@ def draw_character(x: float, y: float):
     delay(0.01)
 
 
+def tri_move_bottom1():
+    print("move bottom")
+    for x in range(400, 780, 5):
+        draw_character(x, 90)
+    pass
+
+
+def tri_move_right():
+
+    pass
+
+
+def tri_move_left():
+    pass
+
+
+def tri_move_bottom2():
+    print("move bottom")
+    for x in range(20, 400, 5):
+        draw_character(x, 90)
+    pass
+
+
+def move_tri():
+    tri_move_bottom1()
+    tri_move_right()
+    tri_move_left()
+    tri_move_bottom2()
+    pass
+
+
 while(True):
 
     # 사각 이동
     move_rect()
     # 원형 이동
     move_circle()
+    # 삼각 이동
+    move_tri()
 
     break
 
