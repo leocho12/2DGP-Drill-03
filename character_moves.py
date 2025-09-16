@@ -7,7 +7,7 @@ grass=load_image('grass.png')
 character=load_image('character.png')
 
 
-
+#사각 이동 관련 함수
 def move_top():
     print("move top")
     for x in range(800, 20, -5):
@@ -46,7 +46,7 @@ def move_rect():
     move_bottom2()
     pass
 
-
+#원현 이동 관련 함수
 def move_circle():
     print("move circle")
 
@@ -64,7 +64,7 @@ def draw_character(x: float, y: float):
     grass.draw_now(400, 30)
     delay(0.01)
 
-
+#삼각 이동 관련 함수
 def tri_move_bottom1():
     print("move bottom")
     for x in range(400, 780, 5):
