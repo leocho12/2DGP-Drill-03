@@ -50,10 +50,10 @@ def move_rect():
 def move_circle():
     print("move circle")
 
-    for deg in range(0, 360):
-        r=200
+    for deg in range(270, 630):
+        r=235
         x=r*math.cos(math.radians(deg))+400
-        y=r*math.sin(math.radians(deg))+300
+        y=r*math.sin(math.radians(deg))+325
         draw_character(x, y)
     pass
 
@@ -67,12 +67,10 @@ def draw_character(x: float, y: float):
 
 while(True):
 
-
+    # 사각 이동
+    move_rect()
     # 원형 이동
     move_circle()
-    #사각 이동
-    move_rect()
-
 
     break
 
