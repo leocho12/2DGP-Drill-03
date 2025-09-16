@@ -8,10 +8,12 @@ character=load_image('character.png')
 
 
 def move_rect():
+    print("move rectangle")
     pass
 
 
 def move_circle():
+    print("move circle")
     pass
 
 
