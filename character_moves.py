@@ -73,11 +73,18 @@ def tri_move_bottom1():
 
 
 def tri_move_right():
-
+    y=90
+    for x in range(780, 400, -5):
+        draw_character(x, y)
+        y+=6
     pass
 
 
 def tri_move_left():
+    y = 550
+    for x in range(400, 20, -5):
+        draw_character(x, y)
+        y -= 6
     pass
 
 
