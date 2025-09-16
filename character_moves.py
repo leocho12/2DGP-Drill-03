@@ -14,15 +14,21 @@ def move_rect():
 
 def move_circle():
     print("move circle")
+    clear_canvas_now()
+    character.draw_now(400,300)
+    delay(0.1)
     pass
 
 
 while(True):
 
-    pass
+
+    # 원형 이동
+    move_circle()
     #사각 이동
     move_rect()
-    #원형 이동
-    move_circle()
+
+
+    #break
 
 close_canvas()
