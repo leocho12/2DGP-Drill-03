@@ -14,9 +14,14 @@ def move_rect():
 
 def move_circle():
     print("move circle")
-    clear_canvas_now()
-    character.draw_now(400,300)
-    delay(0.1)
+
+    for deg in range(0, 360):
+        r=200
+        x=r*math.cos(math.radians(deg))+400
+        y=r*math.sin(math.radians(deg))+300
+        clear_canvas_now()
+        character.draw_now(x,y)
+        delay(0.01)
     pass
 
 
@@ -29,6 +34,6 @@ while(True):
     move_rect()
 
 
-    #break
+    break
 
 close_canvas()
