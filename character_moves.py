@@ -18,6 +18,8 @@ def move_top():
 
 def move_right():
     print("move right")
+    for y in range(800,90,-5):
+        draw_character(800,y)
     pass
 
 
