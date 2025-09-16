@@ -10,36 +10,40 @@ character=load_image('character.png')
 
 def move_top():
     print("move top")
-    for x in range(0,800,5):
-        draw_character(x,550)
-
-    pass
+    for x in range(800, 20, -5):
+        draw_character(x, 550)
 
 
 def move_right():
     print("move right")
-    for y in range(800,90,-5):
-        draw_character(800,y)
-    pass
+    for y in range(90, 550, 5):
+        draw_character(780, y)
 
 
-def move_bottom():
+def move_bottom1():
     print("move bottom")
-    pass
+    for x in range(400, 780, 5):
+        draw_character(x, 90)
 
+def move_bottom2():
+    print("move bottom")
+    for x in range(20, 400, 5):
+        draw_character(x, 90)
 
 def move_left():
     print("move left")
-    pass
+    for y in range(550, 90, -5):
+        draw_character(20, y)
 
 
 def move_rect():
     print("move rectangle")
-    
-    move_top()
+
+    move_bottom1()
     move_right()
-    move_bottom()
+    move_top()
     move_left()
+    move_bottom2()
     pass
 
 
@@ -57,6 +61,7 @@ def move_circle():
 def draw_character(x: float, y: float):
     clear_canvas_now()
     character.draw_now(x, y)
+    grass.draw_now(400, 30)
     delay(0.01)
 
 
@@ -64,7 +69,7 @@ while(True):
 
 
     # 원형 이동
-    #move_circle()
+    move_circle()
     #사각 이동
     move_rect()
 
